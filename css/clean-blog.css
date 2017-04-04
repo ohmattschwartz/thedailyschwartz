@@ -86,7 +86,10 @@ hr.small {
     color: rgba(255, 255, 255, 0.8);
   }
   .navbar-custom .nav li a {
-    color: white;
+    color: #1d3461;
+    font-family:monospace;
+    font-size: 3.4vmin;
+    text-shadow: 15px 5px 5px white;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
@@ -164,12 +167,13 @@ hr.small {
   padding: 100px 0 50px;
   color: white;
 }
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading,
-  .intro-header .post-heading,
-  .intro-header .page-heading {
-    padding: 150px 0;
-  }
+.intro-header .site-heading,
+.intro-header .post-heading,
+.intro-header .page-heading {
+    padding-top: 2vmax;
+    margin-top: 7vmax;
+    padding-bottom: 2vmax;
+    margin-bottom: 5vmax;
 }
 .intro-header .site-heading,
 .intro-header .page-heading {
@@ -178,7 +182,7 @@ hr.small {
 .intro-header .site-heading h1,
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 50px;
+  font-size: 12vmin;
 }
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
@@ -411,5 +415,18 @@ body {
 }
 .site-heading h1{
   font-family:"Olde";
-  color: black;
+  color: #0085A1;
+  text-shadow: 1px 1px 1px white;
+}
+.site-heading h4{
+  color: #d8dbe2;
+  font-family: monospace;
+}
+.site-heading {
+  background-color: #1d3461;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+.intro-header {
+  background-image: url(newspaper.jpg);
 }
